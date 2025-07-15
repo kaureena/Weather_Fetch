@@ -23,4 +23,7 @@ jobs:
       - name: Run tests
         run: python -m unittest discover
 
+        env:
+          API_KEY: ${{ secrets.API_KEY }}
+
 
